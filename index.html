@@ -1,41 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SerraChat</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div id="historico_mensagens"></div>
-    <form id="’chat’">
-      <input type="text" id="texto_mensagem" name="texto_mensagem" />
-      <input type="submit" value="Enviar mensagem!" />
-    </form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
 
-    <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"
-    ></script>
-    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/custom.css" />
+</head>
+<body>
+    
 
-    <script type="text/javascript">
-      var socket = io.connect();
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="background-color: black;">First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://media.licdn.com/dms/image/D4D03AQFtLvtZnnXWrg/profile-displayphoto-shrink_400_400/0/1692834989388?e=1701302400&v=beta&t=KQih4rByMsiXXuqCEBBKfZ6_BlHUtFb4eO5RKpD6DJM" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="background-color: black;">Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="carousel-item">
+                    <img src="https://media.licdn.com/dms/image/D4D03AQERqJvbyqKcSw/profile-displayphoto-shrink_400_400/0/1692829785515?e=1701302400&v=beta&t=eP1VOqVfsMhQa378Aci1QXPh-j4AqQJmohbvIf27M-o" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block bg-dark">
+                      <h5 >Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://media.licdn.com/dms/image/D4D03AQFtLvtZnnXWrg/profile-displayphoto-shrink_400_400/0/1692834989388?e=1701302400&v=beta&t=KQih4rByMsiXXuqCEBBKfZ6_BlHUtFb4eO5RKpD6DJM" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="background-color: black;">Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              </div>
+    </div>
+</div>
+         <script>
 
-      $("form#chat").submit(function (e) {
-        e.preventDefault();
-        socket.emit(
-          "enviar mensagem",
-          $(this).find("#texto_mensagem").val(),
-          function () {
-            $("form#chat #texto_mensagem").val("");
-          }
-        );
-      });
-      socket.on("atualizar mensagens", function (mensagem) {
-        var mensagem_formatada = $("<p />").text(mensagem);
-        $("#historico_mensagens").append(mensagem_formatada);
-      });
-    </script>
-  </body>
+const myCarouselElement = document.querySelector('#myCarousel')
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  wrap: false
+})
+
+         </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
 </html>

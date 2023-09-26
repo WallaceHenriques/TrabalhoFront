@@ -28,3 +28,26 @@
     height: 10px;
 }
 
+i{
+    color: black;
+}
+
+#zap:hover{
+
+    color: #24CC63;
+}
+#linkedin:hover{
+
+    color: #0E72A3;
+}
+#insta:hover{
+
+    color: #E34F7C;
+}
+#git:hover{
+
+    color: #24292F;
+}
+path{
+    color: #E34F7C;
+}

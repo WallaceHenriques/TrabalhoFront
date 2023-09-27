@@ -4,17 +4,25 @@
     left: 0;
     width: 100%;
     z-index: 10;
-    background-color: var(--gray);
+    background-color: #3d566e;
+
+  }
+
+  .navbar>img {
+
+background-color: gray;
+
   }
   
   .navbar .navbar__content {
-    padding: 3rem 4rem 1rem;
+    padding: 1rem 1rem 1rem;
     display: flex;
     justify-content: space-between;
   }
   
   .navbar .navbar__content .navbar__links li {
     display: inline-block;
+    color:aliceblue
   }
   
   .navbar .navbar__content .navbar__links li:not(:last-of-type) {
@@ -22,7 +30,7 @@
   }
   
   .navbar .navbar__content .navbar__links a {
-    padding: 1rem;
+    padding: 4rem;
     display: inline-block;
   }
   
@@ -31,7 +39,7 @@
   }
   
   .navbar.active {
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2rem 0.5rem rgba(250, 246, 246, 0.1);
   }
   
   .navbar .navbar__content .navbar__mobile,

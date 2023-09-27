@@ -1,105 +1,360 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ridge technology</title>
+    <link rel="stylesheet" href="css/extends.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ridge technology</title>
-  <link rel="stylesheet" href="css/extends.css" />
-   <!--Google Fonts-->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-</head>
-
-<body>
-  <div class="logo1"><img src="./imagens/nova.png"  width="100" height="100" ></div>
-  <nav class="navbar">
-    <div class="navbar__content max-width mb-0">
-        <a href="/">
-          
-        </a>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__content max-width mb-0">
+        <div class="logo1">
+          <img
+            src="./imagens/20230927_172443_0000.png"
+            width="100"
+            height="100"
+          />
+        </div>
+        <a href="/"> </a>
         <ul class="navbar__links">
-            <li><a href="#header">Início</a></li>
-            <li><a href="#about">Sobre nós</a></li>
-            <li><a href="#team">Equipe</a></li>
-            <li><a href="#footer">Contato</a></li>
+          <li><a href="#header">Início</a></li>
+          <li><a href="#about">Sobre nós</a></li>
+          <li><a href="#team">Equipe</a></li>
+          <li><a href="#footer">Contato</a></li>
         </ul>
         <div class="navbar__mobile">
-            <img src="imagens/menu.svg" alt="menu" class="burguer">
-            <ul class="mobile__links">
-                <li><a href="#header">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#footer">Contato</a></li>
-            </ul>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            viewBox="0 96 960 960"
+            width="48"
+          >
+            <path
+              d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+            />
+          </svg>
+          <ul class="mobile__links">
+            <li><a href="#header">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#footer">Contato</a></li>
+          </ul>
         </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide col- carrossel"
+          data-bs-ride="true carousel-transition-duration"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div style="background-color: gray" class="col-md-4">
+                    <img
+                      src="./imagens/1537663407941.jpeg"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div style="background-color: gray" class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Tamires Ferreira</h5>
+                      <p class="card-text">
+                        Tamires Ferreira é uma especialista em banco de dados comprometida e altamente competente da Ridge Technology, cujas habilidades são fundamentais para garantir a integridade e o valor dos dados da empresa. Ela desempenha um papel crucial na gestão de dados para a colaboração e o sucesso da organização.
+                      </p>
+                      <a href="https://tamiresf.github.io"
+                        ><button type="button" class="btn btn-primary">
+                          Ver Mais
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3" style="max-width: 1000px">
+                <div style="background-color: gray" class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="./imagens/1692829785515.jpeg"
+                      class="img-fluid rounded-start img2" 
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Paulo Gustavo</h5>
+                      <p class="card-text">
+                        Paulo Gustavo 
+Paulo Gustavo, da Ridge Technology, é um especialista em JavaScript com habilidades em: 
+JavaScript;
+Frameworks e Bibliotecas Avançadas;
+Integração de APIs e Requisições Assíncronas;
+Paulo Gustavo é um ativo inestimável para a equipe de desenvolvimento da Ridge Technology, com sua paixão pelo JavaScript e suas habilidades exclusivas que impulsionaram o sucesso de seus projetos.
+                      </p>
+                      <a href="https://paulotuler001.github.io/myPortfolio"
+                        ><button type="button" class="btn btn-primary">
+                          Ver Mais
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3" style="width: 1000px">
+                <div style="background-color: gray" class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="./imagens/1695760139570.jpeg"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Lucas Seljan</h5>
+                      <p class="card-text">
+                        Lucas: Lucas é um designer de front-end talentoso, especializado em design estético e interações visuais envolventes. Ele transforma ideias em interfaces de usuário visualmente impressionantes, incorporando animações e garantindo que os aplicativos sejam responsáveis ​​em todos os sistemas.
+                      </p>
+                      <a href="https://tamiresf.github.io"
+                        ><button type="button" class="btn btn-primary">
+                          Ver Mais
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3" style="max-width: 1000px">
+                <div style="background-color: gray" class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="./imagens/1695773851011.jpeg"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Liz Dias</h5>
+                      <p class="card-text">
+                        Liz: Como mestra de HTML, CSS e JavaScript, Hevelise é especialista em criar interfaces de usuário elegantes e funcionais . Ela prioriza a acessibilidade, garantindo que todos os usuários tenham uma experiência inclusiva e intuitiva. Seu domínio de frameworks como React e Angular se torna uma força na construção de aplicativos web interativos. 
+                      </p>
+                      <a href="https://tamiresf.github.io"
+                        ><button type="button" class="btn btn-primary">
+                          Ver Mais
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3" style="max-width: 1000px">
+                <div style="background-color: gray" class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="./imagens/images.jpeg"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Wallace Henriques</h5>
+                      <p class="card-text">
+                        Wallace:é um especialista em gerenciamento de estado, testes e otimização de desempenho. Ele projeta arquiteturas front-end sólidas e altamente escaláveis, com uma paixão por padrões de design que promovem a manutenção e a escalabilidade.
+                      </p>
+                      <a href="https://wallacehenriques.github.io/meuportifolio"
+                        ><button type="button" class="btn btn-primary">
+                          Ver Mais
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <button
+            class="carousel-control-prev"
+            style="background-size: 5px"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+        </div>
+        <div class="col-auto">
+          <button
+            class="carousel-control-next"
+            style="padding: 5px 10px"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </div>
-</nav>
 
+    <!-- header (cabeçalho) início-->
 
-
-  
-  <!-- header (cabeçalho) início-->
- 
-
-  <!--about (sobre nós)-->
-  <section id="about" class="about max-width">
-    <div class="about__left">
-        
-    </div>
-    <div class="about__right">
-        <h3 class="tertiary-title mb-m">
-            Sobre nós
-        </h3>
+    <!--about (sobre nós)-->
+    <section id="about" class="about max-width">
+      <div class="about__left"></div>
+      <div class="about__right">
+        <h3 class="tertiary-title mb-m">Sobre nós</h3>
         <p>
-          Na Ridge Technology, pensamos que as melhores ideias muitas vezes nascem em lugares improváveis. Foi em uma noite casual em um bar animado, entre risadas e conversas, que cinco amigos apaixonados por tecnologia decidiram transformar sua visão em realidade. Essa visão deu origem à nossa empresa, e desde então, estamos empenhados em moldar o futuro tecnológico com inovação e paixão.
+          Na Ridge Technology, pensamos que as melhores ideias muitas vezes
+          nascem em lugares improváveis. Foi em uma noite casual em um bar
+          animado, entre risadas e conversas, que cinco amigos apaixonados por
+          tecnologia decidiram transformar sua visão em realidade. Essa visão
+          deu origem à nossa empresa, e desde então, estamos empenhados em
+          moldar o futuro tecnológico com inovação e paixão.
         </p>
         <h4>Nossa História</h4>
-        <br>
+        <br />
         <p>
-          Tudo começou com uma pergunta simples: "E se pudéssemos criar algo que impactasse o mundo da tecnologia de maneira significativa?" Essa pergunta levou a inúmeras discussões e ideias, e, eventualmente, nossa visão começou a tomar forma. Fundada em [ano de fundação], a Ridge Technology nasceu da crença de que a tecnologia poderia ser uma força motriz para resolver problemas complexos e melhorar a vida das pessoas.
+          Tudo começou com uma pergunta simples: "E se pudéssemos criar algo que
+          impactasse o mundo da tecnologia de maneira significativa?" Essa
+          pergunta levou a inúmeras discussões e ideias, e, eventualmente, nossa
+          visão começou a tomar forma. Fundada em [ano de fundação], a Ridge
+          Technology nasceu da crença de que a tecnologia poderia ser uma força
+          motriz para resolver problemas complexos e melhorar a vida das
+          pessoas.
         </p>
         <h4>Nossa Missão</h4>
-        <br>
-        <p>Na Ridge Technology, nossa missão é propor a inovação tecnológica e criar soluções que tornem o mundo um lugar melhor. Estamos comprometidos em superar os desafios do presente e do futuro, aplicando nossa experiência e criatividade para criar produtos e serviços de alta qualidade que atendam às necessidades em constante evolução de nossos clientes.</p>
-        <h4>Nosso Compromisso</h4>
-        <br>
-        <p>A Ridge Technology está empenhada em continuar sua jornada de inovação, criando tecnologias que impactam certamente a vida das pessoas e os negócios de nossos clientes. Estamos gratos por cada desafio que enfrentamos e ansiosos para continuar enfrentando os desafios do amanhã.
-
-          Junte-se a nós nesta emocionante jornada tecnológica. Juntos, podemos construir um futuro mais brilhante, impulsionado pela paixão, pela inovação e pelo compromisso com a excelência.</p>
-    </div>
-</section>
-  <!--team (equipe)-->
-  <section id="skills" class="skills">
-    <div class="skills__content max-width">
-        <h2 class="tertiary-title">Equipe</h2>
-        <br>
-        <p class="description">
-            
+        <br />
+        <p>
+          Na Ridge Technology, nossa missão é propor a inovação tecnológica e
+          criar soluções que tornem o mundo um lugar melhor. Estamos
+          comprometidos em superar os desafios do presente e do futuro,
+          aplicando nossa experiência e criatividade para criar produtos e
+          serviços de alta qualidade que atendam às necessidades em constante
+          evolução de nossos clientes.
         </p>
+        <h4>Nosso Compromisso</h4>
+        <br />
+        <p>
+          A Ridge Technology está empenhada em continuar sua jornada de
+          inovação, criando tecnologias que impactam certamente a vida das
+          pessoas e os negócios de nossos clientes. Estamos gratos por cada
+          desafio que enfrentamos e ansiosos para continuar enfrentando os
+          desafios do amanhã. Junte-se a nós nesta emocionante jornada
+          tecnológica. Juntos, podemos construir um futuro mais brilhante,
+          impulsionado pela paixão, pela inovação e pelo compromisso com a
+          excelência.
+        </p>
+      </div>
+    </section>
+    <!--team (equipe)-->
+    <section id="skills" class="skills">
+      <div class="skills__content max-width">
+        <h2 class="tertiary-title">Equipe</h2>
+        <br />
+        <p class="description"></p>
         <ul>
-            <li class="skills__item">
-                <h3>Tamires</h3>
-                <p>É uma profissional altamente qualificada e experiente em gerenciamento de dados, com um conjunto notável de habilidades.</p>
-                <ul>
-                  <li>Gerenciamento de Dados Multifacetado;</li>
-                  <li>Modelagem de Dados Avançada;</li>
-                  <li>Otimização de Desempenho;</li>
-                  <li>Integração de Dados;</li>
-                  <li>Segurança de Dados;</li>
-                  <li>Recuperação de Desastres e Backup;</li>
-                  <li>Automatização de Tarefas.</li>
-                </ul>
-            </li>
+          <li class="skills__item">
+            <h3>Tamires</h3>
+            <p>
+              É uma profissional altamente qualificada e experiente em
+              gerenciamento de dados, com um conjunto notável de habilidades.
+            </p>
+            <ul>
+              <li>Gerenciamento de Dados Multifacetado;</li>
+              <li>Modelagem de Dados Avançada;</li>
+              <li>Otimização de Desempenho;</li>
+              <li>Integração de Dados;</li>
+              <li>Segurança de Dados;</li>
+              <li>Recuperação de Desastres e Backup;</li>
+              <li>Automatização de Tarefas.</li>
+            </ul>
+          </li>
         </ul>
-    </div>
-</section>
+      </div>
+    </section>
 
-  <!--footer (contato)-->
-
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <!--footer (contato)-->
+  </body>
 </html>

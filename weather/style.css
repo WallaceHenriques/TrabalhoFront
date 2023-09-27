@@ -31,3 +31,9 @@ body{
 .low-high {
     font-size: 22px;
 }
+
+.btn{
+
+    color: aqua;
+    background-color: black;
+}

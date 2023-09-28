@@ -1,14 +1,15 @@
 .about {
     display: flex;
-    justify-content: space-between;
-    gap: 4rem;
-    scroll-margin-top: 20rem;
-    text-align: justify;
+    justify-content: center;
+    
+    scroll-margin-top: rem;
+    text-align: center;
+    align-items: center;
+    
 }
 
 .about .about__left {
-    max-width: 40rem;
-    flex: 1;
+    
 }
 
 .about .about__left p {
@@ -31,7 +32,7 @@
 
 .about .about__right {
     flex: 1;
-    max-width: 66rem;
+    max-width: 50rem;
 }
 
 @media only screen and (max-width: 768px) {

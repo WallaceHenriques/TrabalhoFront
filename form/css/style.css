@@ -1,0 +1,55 @@
+/* Estilize o contêiner do formulário */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilize os campos do formulário */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Estilize o botão de envio */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Estilize o botão de envio quando hover */
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilize os rótulos */
+.form-label {
+    font-weight: bold;
+}
+
+/* Estilize a mensagem de sucesso após o envio */
+.success-message {
+    color: #4CAF50;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilize a mensagem de erro após o envio */
+.error-message {
+    color: #FF0000;
+    font-weight: bold;
+    text-align: center;
+}
+

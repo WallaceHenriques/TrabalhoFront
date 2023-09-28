@@ -4,20 +4,23 @@
     left: 0;
     width: 100%;
     z-index: 10;
-    background-color: #3d566e;
-
+    background-color: #43335B;
+    height: 110px;
+    
   }
 
   .navbar>img {
 
 background-color: gray;
 
+
   }
   
   .navbar .navbar__content {
-    padding: 1rem 4rem 1rem;
+    padding: -10rem -1rem -1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    
   }
   
   .navbar .navbar__content .navbar__links li {
@@ -86,4 +89,5 @@ background-color: gray;
       text-align: center;
     }
   }
+  
   
